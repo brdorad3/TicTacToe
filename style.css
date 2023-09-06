@@ -5,18 +5,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2rem;
 }
 .board{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,1fr);
-    
+    position: relative;
 }
 body{
     margin: 0;
     padding: 0;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 100vh;
+}
+.cell:hover{background-color: rgb(198, 235, 223);}
+.all{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    gap: 25px;
+}
+.cong{
+    position: absolute;
+    
+}
+h1{
+    font-size: 4rem;
+   
 }
